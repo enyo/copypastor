@@ -9,13 +9,19 @@ html
   body(id="site-#{site}")
 
 
+    .navbar.navbar-inverse
+      .navbar-inner
+        a.brand(href="/") CopyPastor
+
+        ul.nav
+          li(class=site == "home" ? "active" : "")
+            a(href="/") New
+          li(class=site == "list" ? "active" : "")
+            a(href="/list") List
+          if locals.textBlock
+            li.active
+              a(href="/#{textBlock._id}") TextBlock
+
     .container
-      ul.nav.nav-pills
-        li(class=site == "home" ? "active" : "")
-          a(href="/") New
-        li(class=site == "list" ? "active" : "")
-          a(href="/list") List
-        if locals.textBlock
-          li.active
-            a(href="/#{textBlock._id}") TextBlock
+
       block content

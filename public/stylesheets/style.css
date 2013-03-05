@@ -1,6 +1,9 @@
 .container {
   margin-top: 50px;
 }
+.navbar-inner {
+  border-radius: 0;
+}
 #new-text-block textarea {
   min-height: 300px;
   font-family: menlo, courier-sans, monospace;

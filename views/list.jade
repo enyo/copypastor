@@ -2,8 +2,11 @@ extends layout
 
 block content
 
-  table.table
+  table.table.table-striped
     thead
+      tr
+        th ID
+        th Name
     tbody
       for textBlock in textBlocks
         tr
