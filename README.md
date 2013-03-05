@@ -1,5 +1,7 @@
 # CopyPastor
 
+*Version 0.0.1-dev*
+
 The easiest way to paste code.
 
 Pasting some code and sharing it with coworkers is something needed at a daily
