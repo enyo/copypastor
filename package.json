@@ -15,6 +15,7 @@
     "mongo-rest": "3.x",
     "config": "0.x",
     "js-yaml": "2.x",
+    "moment": "2.x",
     "mongoose": "3.x"
   }
 }

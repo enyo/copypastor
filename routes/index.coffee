@@ -1,4 +1,5 @@
 
+config = require "config"
 
 TextBlock = require "../models/text-block"
 
@@ -28,4 +29,4 @@ exports.textBlock = (req, res, next) ->
     return next err if err?
     return next "Invalid id #{req.params.id}" unless textBlock
 
-    res.render "text-block", { site: "text-block", textBlock: textBlock }
+    res.render "text-block", { site: "text-block", textBlock: textBlock, textBlockUrl: config.general.url.replace '#{id}', textBlock._id }

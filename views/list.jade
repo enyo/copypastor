@@ -6,9 +6,11 @@ block content
     thead
       tr
         th ID
+        th Created
         th Name
     tbody
       for textBlock in textBlocks
         tr
           td: a(href="/#{textBlock._id}")= textBlock._id
+          td= moment(textBlock._id.getTimestamp()).format("DD, MMM. YYYY – HH:mm")
           td= textBlock.name

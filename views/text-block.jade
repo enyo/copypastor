@@ -4,4 +4,12 @@ block content
   if textBlock.name
     h1= textBlock.name
 
+  input(type="text", disabled="disabled", value=textBlockUrl).text-block-url
+
+
   pre: code= textBlock.text
+
+  script
+    $("input.text-block-url").focus().select()
+  
+  div= moment(textBlock._id.getTimestamp()).format("DD, MMM. YYYY – HH:mm")

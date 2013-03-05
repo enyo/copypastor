@@ -29,6 +29,8 @@ jumpstarter.createWorkers (done) ->
     app.use express.methodOverride()
     app.use express.cookieParser config.general.cookieSecret
 
+    app.locals.moment = require "moment"
+
     app.use express.session
       store: new RedisStore
         socket: config.redis.socket

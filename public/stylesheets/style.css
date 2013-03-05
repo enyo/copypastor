@@ -4,6 +4,13 @@
 .navbar-inner {
   border-radius: 0;
 }
+#site-text-block input.text-block-url {
+  width: 400px;
+}
+code,
+pre {
+  font-family: menlo, courier-sans, monospace;
+}
 #new-text-block textarea {
   min-height: 300px;
   font-family: menlo, courier-sans, monospace;

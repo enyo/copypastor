@@ -2,6 +2,8 @@ general:
   portOrSocket: 3033
   cookieSecret: "engohmue8ul4eiPhaeCe"
 
+  url: "http://localhost:3033/#{id}" # Used to generate to urls to copy
+
 redis:
   host: localhost
   socket: /tmp/redis.sock
