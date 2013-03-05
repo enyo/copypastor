@@ -1,5 +1,23 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+
+  form(action="/",method="post").form-horizontal#new-text-block
+
+    fieldset
+      legend Create new TextBlock
+    .control-group
+      label.control-label Name
+      .controls
+        input(name="name", type="text")
+        small  (Optional)
+    
+    .control-group
+      label.control-label Content
+      .controls
+        textarea(name="text")
+
+    .form-actions
+      button(type="submit").btn.btn-success Save!
+
+    

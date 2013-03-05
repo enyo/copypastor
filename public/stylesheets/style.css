@@ -1,0 +1,9 @@
+.container {
+  margin-top: 50px;
+}
+#new-text-block textarea {
+  min-height: 300px;
+  font-family: menlo, courier-sans, monospace;
+  width: 100%;
+  box-sizing: border-box;
+}

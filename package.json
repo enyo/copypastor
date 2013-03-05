@@ -9,7 +9,12 @@
     "express": "3.x",
     "jade": "*",
     "stylus": "*",
-    "coffee-script": "*",
-    "jumpstarter": "*"
+    "coffee-script": "1.x",
+    "jumpstarter": "0.x",
+    "connect-redis": "1.x",
+    "mongo-rest": "3.x",
+    "config": "0.x",
+    "js-yaml": "2.x",
+    "mongoose": "3.x"
   }
 }

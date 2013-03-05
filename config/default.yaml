@@ -1,0 +1,13 @@
+general:
+  portOrSocket: 3033
+  cookieSecret: "engohmue8ul4eiPhaeCe"
+
+redis:
+  host: localhost
+  socket: /tmp/redis.sock
+
+mongoose:
+  connectPath: mongodb://localhost/copypastor
+
+session:
+  secret: "oht]iet6eebooFa8oosh"

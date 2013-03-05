@@ -1,9 +1,21 @@
 doctype 5
 html
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/boostrap.css')
+    title CopyPastor
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
     script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")
-  body
-    block content
+    script(src="/javascripts/bootstrap.js")
+  body(id="site-#{site}")
+
+
+    .container
+      ul.nav.nav-pills
+        li(class=site == "home" ? "active" : "")
+          a(href="/") New
+        li(class=site == "list" ? "active" : "")
+          a(href="/list") List
+        if locals.textBlock
+          li.active
+            a(href="/#{textBlock._id}") TextBlock
+      block content

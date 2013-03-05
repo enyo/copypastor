@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  if textBlock.name
+    h1= textBlock.name
+
+  pre: code= textBlock.text

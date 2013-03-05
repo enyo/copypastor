@@ -1,0 +1,11 @@
+extends layout
+
+block content
+
+  table.table
+    thead
+    tbody
+      for textBlock in textBlocks
+        tr
+          td: a(href="/#{textBlock._id}")= textBlock._id
+          td= textBlock.name
