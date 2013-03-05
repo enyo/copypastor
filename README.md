@@ -1,6 +1,6 @@
 # CopyPastor
 
-*Version 0.0.1*
+*Version 0.0.2-dev*
 
 The easiest way to paste code.
 
